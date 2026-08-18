@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HausmanHub - дом, который понимает</title>
+  <meta name="description" content="HausmanHub - планшетная панель управления домом для Home Assistant: главная, комнаты, климат, освещение, энергия, сценарии, события и безопасность. Все данные остаются в вашем Home Assistant.">
+  <link rel="canonical" href="https://hausmanhub.ru/">
+  <link rel="redirect_uri" href="hausmanhub://auth-callback">
+  <link rel="icon" type="image/png" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./">
+        <img src="assets/favicon-64.png" alt="Логотип HausmanHub">
+        HausmanHub
+      </a>
+      <nav class="site-nav">
+        <a href="#features">Возможности</a>
+        <a href="#screenshots">Скриншоты</a>
+        <a href="#download">Загрузка</a>
+        <a href="#support">Поддержка</a>
+        <a href="privacy.html">Конфиденциальность</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img class="app-icon" src="assets/icon-512.png" alt="Иконка HausmanHub">
+        <h1>HausmanHub - дом,<br>который понимает</h1>
+        <p class="tagline">
+          HausmanHub - это планшетная панель управления домом для Home Assistant.
+          Главная, комнаты, климат, освещение, энергия, сценарии, события и
+          безопасность собраны в одном спокойном интерфейсе, который всегда под
+          рукой на стене или на столе.
+        </p>
+        <p class="tagline">
+          Все данные дома остаются в вашем Home Assistant. Внешнего облака
+          HausmanHub не существует: панель работает внутри домашней сети и
+          разговаривает только с вашим сервером.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="https://github.com/shumkiiv/hausmanhub_hacs">Интеграция на GitHub</a>
+          <a class="btn btn-secondary" href="privacy.html">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Что умеет HausmanHub</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Весь дом на одном экране</h3>
+            <p>
+              Главная собирает состояние дома целиком: погода, комнаты, климат,
+              энергия, качество воздуха, избранные сценарии, ближайшие события и
+              тревоги. Всё важное видно с первого взгляда, без листания меню.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Климат по комнатам</h3>
+            <p>
+              Цели температуры и влажности для каждой комнаты, автоматические и
+              ручные режимы, профили и расписания. Межсезонный режим следит за
+              уличной температурой и реагирует на открытые окна.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Энергия под контролем</h3>
+            <p>
+              Мощность, ток и напряжение по каждому источнику, история
+              потребления за день, неделю, месяц и год, а также показания
+              счётчика с напоминаниями о передаче.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Комнаты и устройства</h3>
+            <p>
+              Каталог всех устройств дома по комнатам: свет, шторы, медиа,
+              техника, датчики. Видно, что на связи, а что отвалилось, и
+              управление открывается одним касанием.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Сценарии и безопасность</h3>
+            <p>
+              Любимые сценарии запускаются прямо с главной. Тревоги о протечках,
+              дыме и газе показываются отдельными карточками, состояние окон и
+              дверей всегда на виду.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Локально и прозрачно</h3>
+            <p>
+              Панель не передаёт данные разработчику или третьим лицам, в ней нет
+              рекламы, аналитики и трекеров. Токены хранятся в защищённом
+              хранилище планшета. Подробности - в
+              <a href="privacy.html">Политике конфиденциальности</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <div class="container">
+        <h2>Скриншоты</h2>
+        <div class="screenshots-grid">
+          <div class="screenshot-card">
+            <img src="assets/screenshots/dashboard.png" alt="Главный экран HausmanHub: обзор дома, климат, энергия и сценарии" loading="lazy">
+            <p>Главная: весь дом с первого взгляда</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="assets/screenshots/climate.png" alt="Экран климата HausmanHub: цели и режимы по комнатам" loading="lazy">
+            <p>Климат по комнатам с целями и режимами</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="assets/screenshots/energy.png" alt="Экран энергии HausmanHub: нагрузка, история и показания счётчика" loading="lazy">
+            <p>Энергия: нагрузка, история и счётчик</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="assets/screenshots/devices.png" alt="Каталог устройств HausmanHub с состоянием связи" loading="lazy">
+            <p>Каталог устройств с состоянием связи</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="download">
+      <div class="container">
+        <h2>Загрузка</h2>
+        <p>
+          Приложение HausmanHub пока распространяется в закрытом тестировании и
+          не опубликовано в магазинах. Открытая часть проекта - интеграция
+          Hausman for Home Assistant, которая устанавливается через HACS и
+          отдаёт панели модель дома, климат и команды.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="https://github.com/shumkiiv/hausmanhub_hacs">hausmanhub_hacs<span class="btn-note">HACS-интеграция</span></a>
+          <span class="btn btn-secondary">Приложение<span class="btn-note">Закрытое тестирование</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="support">
+      <div class="container">
+        <h2>Поддержка</h2>
+        <p>
+          Вопросы, идеи и сообщения о проблемах принимаются в разделе Issues
+          репозитория
+          <a href="https://github.com/shumkiiv/hausmanhub_hacs/issues">hausmanhub_hacs</a>
+          на GitHub.
+        </p>
+        <p>
+          Совет: журнал диагностики из приложения можно отправить через
+          системное меню «Поделиться». Адреса и идентификаторы устройств в нём
+          маскируются автоматически.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; 2026 HausmanHub
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="https://github.com/shumkiiv/hausmanhub_hacs">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>

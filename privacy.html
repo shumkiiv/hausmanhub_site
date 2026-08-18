@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика конфиденциальности - HausmanHub</title>
+  <meta name="description" content="Политика конфиденциальности HausmanHub: приложение работает внутри домашней сети, не имеет собственного облака и не передаёт данные третьим лицам.">
+  <link rel="canonical" href="https://hausmanhub.ru/privacy.html">
+  <link rel="icon" type="image/png" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./">
+        <img src="assets/favicon-64.png" alt="Логотип HausmanHub">
+        HausmanHub
+      </a>
+      <nav class="site-nav">
+        <a href="./#features">Возможности</a>
+        <a href="./#screenshots">Скриншоты</a>
+        <a href="./#download">Загрузка</a>
+        <a href="./#support">Поддержка</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h1>Политика конфиденциальности Hausman</h1>
+    <p class="updated">Дата: 2026-08-17. Версия: 1.0.</p>
+
+    <p>
+      <code>Hausman</code> - приложение для планшета, которое управляет домом
+      через локальный сервер Home Assistant в квартире владельца. Приложение
+      работает внутри домашней сети и не имеет собственного облака.
+    </p>
+
+    <h2>Какие данные обрабатываются</h2>
+    <p>
+      Все данные хранятся локально на планшете и на сервере Home Assistant
+      владельца:
+    </p>
+    <ul>
+      <li>адрес сервера Home Assistant и параметры подключения;</li>
+      <li>
+        токены доступа (OAuth access/refresh или long-lived token). Токены
+        хранятся в Android Keystore и исключены из резервных копий;
+      </li>
+      <li>
+        модель дома: имена комнат, устройств, сценариев и расписаний, как их
+        отдаёт Home Assistant;
+      </li>
+      <li>
+        технический журнал диагностики подключения (без токенов; при экспорте
+        IP-адреса и идентификаторы устройств маскируются);
+      </li>
+      <li>
+        настройки интерфейса: выбранные комнаты, раскладка панелей, PIN
+        политики.
+      </li>
+    </ul>
+
+    <h2>Что приложение НЕ делает</h2>
+    <ul>
+      <li>Не передаёт данные на серверы разработчика или третьих лиц.</li>
+      <li>Не содержит рекламы, аналитики и трекеров.</li>
+      <li>Не собирает crash reports на внешние сервисы.</li>
+      <li>
+        Не включает токены, адреса устройств и содержимое команд в
+        экспортируемые журналы.
+      </li>
+    </ul>
+
+    <h2>Резервные копии</h2>
+    <p>
+      Android Auto Backup и перенос на новое устройство исключают токены,
+      технический журнал и приватные настройки дома
+      (<code>backup_rules.xml</code>, <code>data_extraction_rules.xml</code>).
+      После восстановления на новом устройстве требуется повторный вход.
+    </p>
+
+    <h2>Управление данными</h2>
+    <p>
+      Удаление приложения удаляет все локально хранящиеся данные. Отзыв токена
+      выполняется в интерфейсе Home Assistant (Профиль - Долгоживущие токены
+      доступа / OAuth приложения).
+    </p>
+
+    <h2>Контакт</h2>
+    <p>
+      Вопросы о данных: репозиторий проекта
+      <a href="https://github.com/shumkiiv/hausmanhub_hacs/issues">hausmanhub_hacs</a>
+      (раздел Issues).
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; 2026 HausmanHub
+      <a href="./">Главная</a>
+      <a href="https://github.com/shumkiiv/hausmanhub_hacs">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
