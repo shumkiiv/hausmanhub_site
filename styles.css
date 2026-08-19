@@ -57,11 +57,17 @@ body {
   border-radius: 10px;
 }
 
+.site-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 .site-nav a {
-  margin-left: 22px;
+  margin-left: 18px;
   color: var(--ink-soft);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .site-nav a:hover {
@@ -290,6 +296,15 @@ section h2 {
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 1.8rem;
+  }
+
+  .site-header .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
   }
 
   .site-nav a {
