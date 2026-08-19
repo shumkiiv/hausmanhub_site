@@ -6,7 +6,8 @@ domain `hausmanhub.ru`. Отдельный репозиторий, без ссы
 
 ## Состав
 
-- `index.html` - главная: герой, возможности, скриншоты, загрузка, поддержка.
+- `index.html` - главная: о проекте, устройство системы, возможности, все
+  экраны приложения и панели HA с навигацией, загрузка, поддержка.
   В `<head>` есть `<link rel="redirect_uri" href="hausmanhub://auth-callback">`:
   страница может служить hosted client_id для OAuth/IndieAuth Home Assistant
   (сейчас основной client_id отдаёт Node-RED внутри дома, см.
@@ -15,10 +16,11 @@ domain `hausmanhub.ru`. Отдельный репозиторий, без ссы
   `docs/product/PRIVACY_POLICY.md` (синхронизировать при изменении).
 - `styles.css` - стили; цвета из `components/integration/docs/design-tokens.json`
   (accent/primary `#2F6FE4`).
-- `assets/` - иконка (сгенерирована, силуэт дома на фирменном синем) и
-  скриншоты 1280x800 из `artifacts/` (реальные снимки панели; публикация
-  согласована владельцем 2026-08-18, исключение записано в
-  `components/android/AGENTS.md`).
+- `assets/` - настоящая иконка приложения (светлый фирменный знак «дом с H»
+  на тёмном поле, как в Android, рендер из `ic_launcher_foreground.xml`) и
+  обезличенные скриншоты из `artifacts/` (реальные снимки панели и планшета;
+  имена, номера устройств и адреса затёрты; публикация согласована владельцем
+  2026-08-18, исключение записано в `components/android/AGENTS.md`).
 - `CNAME` - custom domain для GitHub Pages.
 
 ## Публикация (однократно)

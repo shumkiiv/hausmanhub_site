@@ -296,4 +296,123 @@ section h2 {
     margin-left: 14px;
     font-size: 0.85rem;
   }
+
+  .shot-row {
+    grid-template-columns: 1fr;
+  }
+
+  .shot-row.rev img {
+    order: 0;
+  }
+}
+
+/* Чередование фона секций */
+section.alt {
+  background: var(--card);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+/* Текстовые блоки */
+.prose {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.prose p {
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
+.section-lead {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+/* Навигация по экранам */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 0 40px;
+}
+
+.chips a {
+  padding: 7px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.chips a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+section.alt .chips a {
+  background: var(--bg);
+}
+
+/* Экран с описанием */
+.shot-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 36px;
+  align-items: center;
+  margin: 0 0 56px;
+  scroll-margin-top: 24px;
+}
+
+.shot-row.rev img {
+  order: 2;
+}
+
+.shot-row img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(22, 28, 38, 0.1);
+  background: var(--card);
+}
+
+.shot-row h3 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+}
+
+.shot-row p {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  margin: 0 0 12px;
+}
+
+.more-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 8px 0 24px;
+  scroll-margin-top: 24px;
+}
+
+/* Сетки скриншотов */
+.cards-5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.ha-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.ha-gallery .screenshot-card,
+.cards-5 .screenshot-card {
+  scroll-margin-top: 24px;
 }
