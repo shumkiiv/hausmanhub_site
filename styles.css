@@ -423,3 +423,7 @@ section.alt .chips a {
 .lightbox[hidden]{display:none}
 .lightbox img{max-width:96vw;max-height:92vh;border-radius:12px;box-shadow:0 24px 80px rgba(0,0,0,.5)}
 .lightbox-close{position:absolute;top:16px;right:20px;font-size:32px;color:#fff;background:none;border:0;cursor:pointer;line-height:1}
+
+/* Списки внутри прозаических блоков */
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin-bottom:10px}
